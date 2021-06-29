@@ -1,0 +1,33 @@
+// general styles
+a {
+    color: inherit;
+}
+// Header
+.header-nav {
+    background-color: #312D2C;
+}
+.icons-social > a {
+    $size: 40px;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s filter;
+    &:hover {
+        filter: opacity(0.3);
+    }
+}
+// nav
+.navbar-brand > img {
+    width: 4rem;
+    height: 3rem;
+}
+.navbar-main {
+    .active {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-shadow: 1px 1px 0px gray;
+    }
+}
