@@ -52,7 +52,7 @@ a {
     height: $box-size;
     position: absolute;
     z-index: -10;
-    animation: turnZ 9s linear alternate-reverse;
+    animation: turnZ 9s linear alternate-reverse infinite;
  }
 
 .photo-frame::before {
