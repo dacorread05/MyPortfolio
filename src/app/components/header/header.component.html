@@ -7,31 +7,30 @@
                 <img src="assets/logo.png" alt="Brand Diego Correa" />
             </a>
             <!-- Boton -->
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
-                aria-expanded="false" aria-label="Barra de navehacion">
-                <span class="navbar-toggle-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <!-- Items  -->
             <div class="collapse navbar-collapse" id="mainNav">
                 <div class="nav ms-auto text-light">
                     <a href="" class="nav-link active">Home</a>
-                    <a href="" class="nav-link">Services</a>
-                    <a href="" class="nav-link">Portfolio</a>
-                    <a href="" class="nav-link">Contact</a>
+                    <a href="#sections" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
     <div class="container">
-        <header class="row">
+        <header class="row align-items-center justify-content-center header-main">
             <div class="col-md-7">
                 <!-- Greeting -->
-                <h1 class="display-2 text-light"> 
+                <h1 class="display-2 text-dark"> 
                     <span class="d-block">Hellow,</span>
                     I'm Diego Correa
                 </h1>
                 <!-- Job -->
-                <p class="text-muted fw-light text-capitalize">Web Frontend Developer Junior</p>
+                <p class="text-muted fw-dark text-capitalize">Web Frontend Developer Junior</p>
                 <!-- Social media -->
                 <div class="d-none d-md-block icons-social">
                     <!-- GitHub -->
@@ -44,7 +43,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-8 col-md-4"></div>
+            <div class="img col-8 col-md-4">
+                <div class="photo-frame position-relative shadow">
+                    <img src="assets/image.png" width="300" alt="" srcset="">
+                </div>
+            </div>
         </header>
     </div>
     <!-- Header -->

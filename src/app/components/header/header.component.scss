@@ -1,13 +1,16 @@
+// Variables
+$size: 40px;
+$box-size: 3em;
+$box-size-after: 3em;
 // general styles
 a {
     color: inherit;
 }
 // Header
-.header-nav {
-    background-color: #312D2C;
+.header-main {
+    min-height: 100vh;
 }
 .icons-social > a {
-    $size: 40px;
     width: $size;
     height: $size;
     border-radius: 50%;
@@ -19,15 +22,55 @@ a {
         filter: opacity(0.3);
     }
 }
+.img {
+    display: flex;
+    justify-content: center;
+}
 // nav
 .navbar-brand > img {
     width: 4rem;
-    height: 3rem;
+    height: 4rem;
 }
 .navbar-main {
+    background-color: #312D2C;
     .active {
         text-decoration: underline;
         text-underline-offset: 5px;
         text-shadow: 1px 1px 0px gray;
     }
 }
+ // Animations image 
+ .photo-frame {
+     font-size: 20px;
+ }
+
+ .photo-frame::before, 
+ .photo-frame::after {
+    content: '';
+    display: block;
+    width: $box-size;
+    height: $box-size;
+    position: absolute;
+    z-index: -10;
+    animation: turnZ 9s linear alternate-reverse;
+ }
+
+.photo-frame::before {
+    background-image: radial-gradient(#0077b7 50%, #312D2C 50%);
+    top: calc(99% - (3em / 2));
+    right: calc(99% - (3em / 2));
+}
+
+.photo-frame::after {
+    bottom: calc(105% - (5em / 2));
+    left: calc(105% - (5em / 2));
+    background: linear-gradient(45deg, white 45%, transparent 45%),
+    radial-gradient(#0077b7 30%, yellow 30% 70%, #312D2C 70%, transparent 70%)
+}
+//media querys
+@keyframes turnZ {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
