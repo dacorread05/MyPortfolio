@@ -7,9 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  projects = [
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+    {
+      title: "Card Title",
+      description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      page: "#",
+      repository: "#",
+      image: "assets/fondo.jpg",
+    },
+  ]
+  index:number = 0;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
+  }
+
+  getIndex(index:number) {
+    this.index = index;
   }
 
 }

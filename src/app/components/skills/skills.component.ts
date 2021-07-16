@@ -12,19 +12,16 @@ export class SkillsComponent implements OnInit {
       title: "angular", 
       image: "assets/icons/angular.png", 
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui totam repudiandae doloribus delectus, id", 
-      link: "#" 
     },
     {
       title: "JavaScript", 
-      image: "assets/icons/angular.png", 
+      image: "assets/icons/js.png", 
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui totam repudiandae doloribus delectus, id", 
-      link: "#" 
     },
     {
       title: "HTML", 
-      image: "assets/icons/angular.png", 
+      image: "assets/icons/html.png", 
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui totam repudiandae doloribus delectus, id", 
-      link: "#" 
     },
     // {
     //   title: "CSS", 

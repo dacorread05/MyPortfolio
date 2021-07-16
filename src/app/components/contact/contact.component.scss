@@ -1,0 +1,30 @@
+$size: 40px;
+a {
+    color: black;
+}
+.icons-social > a {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s filter;
+    &:hover {
+        filter: opacity(0.3);
+    }
+}
+.rounded-5 {
+    border-radius: 1.3rem;
+    color: white;
+}
+
+.nav-link, .btn {
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    &:active {
+        transform: translateY(5px);
+    }
+}
